@@ -1,0 +1,317 @@
+/* ============================================================
+   Pacino's Playcare — Food Pre-Pay Page Styles
+   ============================================================ */
+
+/* ----------------------------------------------------------
+   Food Hero Banner
+   ---------------------------------------------------------- */
+.food-hero {
+  background: linear-gradient(135deg, var(--color-secondary-dark) 0%, var(--color-secondary) 100%);
+}
+
+/* ----------------------------------------------------------
+   Zero-Markup Promise Banner
+   ---------------------------------------------------------- */
+.zero-markup-banner {
+  background-color: var(--color-primary);
+  padding-block: var(--space-5);
+  text-align: center;
+}
+
+.zero-markup-banner__inner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-4);
+  flex-wrap: wrap;
+}
+
+.zero-markup-banner__icon {
+  font-size: var(--size-xl);
+}
+
+.zero-markup-banner__text {
+  font-family: var(--font-heading);
+  font-weight: var(--weight-extrabold);
+  font-size: var(--size-md);
+  color: var(--color-text);
+}
+
+.zero-markup-banner__text span {
+  color: var(--color-secondary-dark);
+}
+
+/* ----------------------------------------------------------
+   How It Works
+   ---------------------------------------------------------- */
+.how-it-works {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: var(--space-6);
+  margin-top: var(--space-12);
+}
+
+.step-card {
+  text-align: center;
+  position: relative;
+}
+
+.step-card:not(:last-child)::after {
+  content: '→';
+  position: absolute;
+  right: calc(-1 * var(--space-4));
+  top: 22px;
+  font-size: var(--size-xl);
+  color: var(--color-primary);
+  font-weight: var(--weight-bold);
+}
+
+.step-card__num {
+  width: 48px;
+  height: 48px;
+  background-color: var(--color-primary);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-heading);
+  font-weight: var(--weight-extrabold);
+  font-size: var(--size-lg);
+  color: var(--color-text);
+  margin: 0 auto var(--space-4);
+}
+
+.step-card__title {
+  font-family: var(--font-heading);
+  font-weight: var(--weight-bold);
+  font-size: var(--size-base);
+  margin-bottom: var(--space-2);
+}
+
+.step-card__desc {
+  font-size: var(--size-sm);
+  color: var(--color-text-muted);
+  line-height: var(--leading-normal);
+}
+
+/* ----------------------------------------------------------
+   Food Catalogue
+   ---------------------------------------------------------- */
+.food-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-3);
+  margin-bottom: var(--space-8);
+}
+
+.filter-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  padding: var(--space-2) var(--space-4);
+  background-color: var(--color-surface);
+  border: 2px solid var(--color-border);
+  border-radius: var(--radius-full);
+  font-family: var(--font-heading);
+  font-size: var(--size-sm);
+  font-weight: var(--weight-semibold);
+  color: var(--color-text-muted);
+  cursor: pointer;
+  transition: all var(--transition-fast);
+}
+
+.filter-btn:hover,
+.filter-btn.active {
+  border-color: var(--color-primary);
+  background-color: rgba(232,168,56,0.1);
+  color: var(--color-primary-dark);
+}
+
+.food-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: var(--space-6);
+}
+
+.food-card {
+  background-color: var(--color-surface);
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--color-border);
+  overflow: hidden;
+  box-shadow: var(--shadow-card);
+  transition: box-shadow var(--transition-normal), transform var(--transition-normal);
+}
+
+.food-card:hover {
+  box-shadow: var(--shadow-md);
+  transform: translateY(-3px);
+}
+
+.food-card__img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  background: linear-gradient(135deg, var(--color-surface-alt), var(--color-bg));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 4rem;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.food-card__body {
+  padding: var(--space-5) var(--space-6);
+}
+
+.food-card__brand {
+  font-size: var(--size-xs);
+  font-weight: var(--weight-semibold);
+  color: var(--color-text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin-bottom: var(--space-1);
+}
+
+.food-card__name {
+  font-family: var(--font-heading);
+  font-weight: var(--weight-bold);
+  font-size: var(--size-base);
+  margin-bottom: var(--space-2);
+  line-height: var(--leading-snug);
+}
+
+.food-card__weight {
+  font-size: var(--size-xs);
+  color: var(--color-text-muted);
+  margin-bottom: var(--space-4);
+}
+
+.food-card__price-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-3);
+}
+
+.food-card__price {
+  font-family: var(--font-heading);
+  font-weight: var(--weight-extrabold);
+  font-size: var(--size-xl);
+  color: var(--color-secondary);
+}
+
+.food-card__price-note {
+  font-size: var(--size-xs);
+  color: var(--color-text-muted);
+  line-height: 1.3;
+}
+
+.food-card__price-match {
+  display: flex;
+  align-items: center;
+  gap: var(--space-1);
+  font-size: var(--size-xs);
+  font-weight: var(--weight-semibold);
+  color: var(--color-secondary);
+  margin-top: var(--space-3);
+  padding-top: var(--space-3);
+  border-top: 1px solid var(--color-border);
+}
+
+/* ----------------------------------------------------------
+   Promise Section
+   ---------------------------------------------------------- */
+.promise-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: var(--space-6);
+  margin-top: var(--space-10);
+}
+
+.promise-card {
+  background-color: rgba(255,255,255,0.08);
+  border: 1px solid rgba(255,255,255,0.15);
+  border-radius: var(--radius-md);
+  padding: var(--space-6);
+  text-align: center;
+}
+
+.promise-card__icon {
+  font-size: 2.5rem;
+  display: block;
+  margin-bottom: var(--space-4);
+}
+
+.promise-card__title {
+  font-family: var(--font-heading);
+  font-weight: var(--weight-bold);
+  font-size: var(--size-base);
+  color: var(--color-text-light);
+  margin-bottom: var(--space-2);
+}
+
+.promise-card__desc {
+  font-size: var(--size-sm);
+  color: rgba(255,255,255,0.65);
+  line-height: var(--leading-normal);
+}
+
+/* ----------------------------------------------------------
+   Custom Request
+   ---------------------------------------------------------- */
+.custom-request-box {
+  background-color: var(--color-surface);
+  border-radius: var(--radius-lg);
+  padding: var(--space-10);
+  box-shadow: var(--shadow-card);
+  border: 1px solid var(--color-border);
+  max-width: 640px;
+  margin-inline: auto;
+  text-align: center;
+}
+
+.custom-request-box__icon {
+  font-size: 3rem;
+  display: block;
+  margin-bottom: var(--space-5);
+}
+
+.custom-request-box h3 {
+  font-size: var(--size-xl);
+  margin-bottom: var(--space-4);
+}
+
+.custom-request-box p {
+  font-size: var(--size-base);
+  color: var(--color-text-muted);
+  margin-bottom: var(--space-6);
+  line-height: var(--leading-normal);
+}
+
+/* ----------------------------------------------------------
+   Responsive — Food page
+   ---------------------------------------------------------- */
+@media (max-width: 768px) {
+  .step-card:not(:last-child)::after {
+    display: none;
+  }
+
+  .how-it-works {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .how-it-works {
+    grid-template-columns: 1fr;
+  }
+
+  .food-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 360px) {
+  .food-grid {
+    grid-template-columns: 1fr;
+  }
+}
