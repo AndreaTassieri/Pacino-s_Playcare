@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Pacino's Playcare — Glasgow's warmest, most personalised dog-sitting service. One family at a time. Affordable, transparent pricing. Run by AJ, a lifelong dog lover." />
+
+  <title>Pacino's Playcare | Glasgow's Favourite Dog-Sitter</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="css/home.css" />
+
+  <!-- Favicon (emoji fallback) -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🐾</text></svg>" />
+</head>
+<body>
+
+  <!-- ========================================================
+       NAVIGATION
+  ======================================================== -->
+  <nav class="site-nav" role="navigation" aria-label="Main navigation">
+    <div class="nav-inner">
+
+      <!-- Logo -->
+      <a href="index.html" class="nav-logo" aria-label="Pacino's Playcare — Home">
+        <span class="nav-logo__icon" aria-hidden="true">🐾</span>
+        <span class="nav-logo__text">Pacino's <span>Playcare</span></span>
+      </a>
+
+      <!-- Mobile toggle -->
+      <button
+        class="nav-toggle"
+        aria-label="Open navigation menu"
+        aria-expanded="false"
+        aria-controls="nav-links"
+      >
+        <span class="nav-toggle__bar"></span>
+        <span class="nav-toggle__bar"></span>
+        <span class="nav-toggle__bar"></span>
+      </button>
+
+      <!-- Links -->
+      <ul class="nav-links" id="nav-links" role="list">
+        <li class="nav-links__item">
+          <a href="index.html" class="nav-links__link" data-page="index.html">Home</a>
+        </li>
+        <li class="nav-links__item">
+          <a href="pricing.html" class="nav-links__link" data-page="pricing.html">Pricing</a>
+        </li>
+        <li class="nav-links__item">
+          <a href="food.html" class="nav-links__link" data-page="food.html">Food Pre-Pay</a>
+        </li>
+        <li class="nav-links__item">
+          <a href="contact.html" class="nav-links__link btn btn-primary nav-cta" data-page="contact.html">Get a Quote</a>
+        </li>
+      </ul>
+
+    </div>
+  </nav>
+
+  <main>
+
+    <!-- ======================================================
+         HERO
+    ====================================================== -->
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero__paws" aria-hidden="true">
+        <span class="hero__paw">🐾</span>
+        <span class="hero__paw">🐾</span>
+        <span class="hero__paw">🐾</span>
+        <span class="hero__paw">🐾</span>
+        <span class="hero__paw">🐾</span>
+        <span class="hero__paw">🐾</span>
+      </div>
+
+      <div class="container">
+        <div class="hero__content">
+
+          <!-- Text -->
+          <div class="hero__text">
+            <div class="hero__location" aria-label="Location: Glasgow, Scotland">
+              📍 Glasgow, Scotland
+            </div>
+
+            <h1 class="hero__title" id="hero-title">
+              Your Dog Deserves
+              <span class="hero__title-highlight">Undivided Love.</span>
+            </h1>
+
+            <p class="hero__subtitle">
+              Pacino's Playcare is Glasgow's most personal dog-sitting service.
+              We host <strong>one family's dogs at a time</strong> — no unfamiliar
+              faces, no kennel chaos. Just genuine care, walkies, and tail wags.
+            </p>
+
+            <div class="hero__actions">
+              <a href="contact.html" class="btn btn-primary btn-lg">
+                Get a Free Quote
+              </a>
+              <a href="#about" class="btn btn-secondary">
+                Meet AJ
+              </a>
+            </div>
+
+            <!-- Trust indicators -->
+            <div class="hero__trust">
+              <div class="hero__trust-item">
+                <span class="hero__trust-number">1</span>
+                <span class="hero__trust-label">Family<br>at a time</span>
+              </div>
+              <div class="hero__trust-item">
+                <span class="hero__trust-number">3</span>
+                <span class="hero__trust-label">Breeds AJ<br>grew up with</span>
+              </div>
+              <div class="hero__trust-item">
+                <span class="hero__trust-number">0%</span>
+                <span class="hero__trust-label">Food<br>mark-up</span>
+              </div>
+              <div class="hero__trust-item">
+                <span class="hero__trust-number">£20</span>
+                <span class="hero__trust-label">From per<br>half-day</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Visual -->
+          <div class="hero__visual" aria-hidden="true">
+            <div class="hero__card-main">
+              <span class="hero__card-emoji">🐶</span>
+              <p class="hero__card-title">Happy. Safe. Loved.</p>
+              <p class="hero__card-sub">Every dog is treated like family.</p>
+            </div>
+
+            <div class="hero__cards-row">
+              <div class="hero__mini-card">
+                <span class="hero__mini-card-icon">🏡</span>
+                <span class="hero__mini-card-label">Home<br>Environment</span>
+              </div>
+              <div class="hero__mini-card">
+                <span class="hero__mini-card-icon">🦮</span>
+                <span class="hero__mini-card-label">Daily<br>Walkies</span>
+              </div>
+              <div class="hero__mini-card">
+                <span class="hero__mini-card-icon">💤</span>
+                <span class="hero__mini-card-label">Overnight<br>Care</span>
+              </div>
+              <div class="hero__mini-card">
+                <span class="hero__mini-card-icon">🤍</span>
+                <span class="hero__mini-card-label">Anxious<br>Dog Friendly</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================
+         USP STRIP
+    ====================================================== -->
+    <section class="usp-strip" aria-label="Key benefits">
+      <div class="container">
+        <div class="usp-strip__inner">
+          <div class="usp-item">
+            <span class="usp-item__icon" aria-hidden="true">🔒</span>
+            <span class="usp-item__text">One Family at a Time — Zero Conflicts</span>
+          </div>
+          <div class="usp-item">
+            <span class="usp-item__icon" aria-hidden="true">💷</span>
+            <span class="usp-item__text">Transparent, Affordable Pricing</span>
+          </div>
+          <div class="usp-item">
+            <span class="usp-item__icon" aria-hidden="true">🐾</span>
+            <span class="usp-item__text">Lifelong Dog Lover Running the Show</span>
+          </div>
+          <div class="usp-item">
+            <span class="usp-item__icon" aria-hidden="true">📍</span>
+            <span class="usp-item__text">Proudly Local — Glasgow Only</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================
+         PEACE OF MIND — ONE FAMILY POLICY
+    ====================================================== -->
+    <section class="section peace-section" id="peace-of-mind" aria-labelledby="peace-title">
+      <div class="container">
+        <div class="peace-inner">
+
+          <!-- Visual / Stats -->
+          <div class="peace-visual">
+            <span class="peace-icon-big" aria-hidden="true">🛡️</span>
+            <div class="peace-stats">
+              <div class="peace-stat">
+                <span class="peace-stat__number">1</span>
+                <span class="peace-stat__label">Family hosted at once</span>
+              </div>
+              <div class="peace-stat">
+                <span class="peace-stat__number">0</span>
+                <span class="peace-stat__label">Unfamiliar dogs present</span>
+              </div>
+              <div class="peace-stat">
+                <span class="peace-stat__number">100%</span>
+                <span class="peace-stat__label">Focused attention</span>
+              </div>
+              <div class="peace-stat">
+                <span class="peace-stat__number">∞</span>
+                <span class="peace-stat__label">Tail wags guaranteed</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Content -->
+          <div class="peace-content">
+            <h2 class="peace-content__title" id="peace-title">
+              Your Dog Gets
+              <em>Our Full Attention.</em>
+              Always.
+            </h2>
+            <p class="peace-content__lead">
+              Most kennels and dog-sitters take in several families' pets simultaneously.
+              That means unfamiliar dogs, potential conflicts, and divided attention.
+              We do things differently.
+            </p>
+
+            <ul class="peace-list" role="list">
+              <li class="peace-list__item">
+                <div class="peace-list__icon" aria-hidden="true">🔒</div>
+                <div class="peace-list__text">
+                  <strong>Strictly One Family at a Time</strong>
+                  <p>We never host dogs from multiple households simultaneously. Your dog will never encounter an unfamiliar dog during their stay.</p>
+                </div>
+              </li>
+              <li class="peace-list__item">
+                <div class="peace-list__icon" aria-hidden="true">🧡</div>
+                <div class="peace-list__text">
+                  <strong>Perfect for Shy or Anxious Dogs</strong>
+                  <p>Dogs with anxiety, reactivity, or social sensitivities thrive in our low-stimulation, stress-free environment.</p>
+                </div>
+              </li>
+              <li class="peace-list__item">
+                <div class="peace-list__icon" aria-hidden="true">👀</div>
+                <div class="peace-list__text">
+                  <strong>Undivided Care & Attention</strong>
+                  <p>Because we only look after your dog(s), AJ can focus entirely on their needs — routines, meals, walks, and play all tailored specifically to them.</p>
+                </div>
+              </li>
+              <li class="peace-list__item">
+                <div class="peace-list__icon" aria-hidden="true">🏡</div>
+                <div class="peace-list__text">
+                  <strong>A Home, Not a Kennel</strong>
+                  <p>Your dog stays in a warm, real home environment — not a cage or a compound. Comfort and familiarity are at the heart of everything we do.</p>
+                </div>
+              </li>
+            </ul>
+
+            <a href="contact.html" class="btn btn-primary">Book a Stay</a>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================
+         ABOUT AJ
+    ====================================================== -->
+    <section class="section" id="about" aria-labelledby="about-title">
+      <div class="container">
+        <div class="about-inner">
+
+          <!-- Visual -->
+          <div class="about-visual">
+            <div class="about-avatar" aria-label="Illustration of AJ with dogs" aria-hidden="true">
+              🧑‍🦱🐕🐩
+            </div>
+
+            <div class="about-highlights">
+              <div class="about-highlight">
+                <div class="about-highlight__value">3</div>
+                <div class="about-highlight__label">Dogs AJ grew up with</div>
+              </div>
+              <div class="about-highlight">
+                <div class="about-highlight__value">2</div>
+                <div class="about-highlight__label">Dedicated team members</div>
+              </div>
+              <div class="about-highlight">
+                <div class="about-highlight__value">GLA</div>
+                <div class="about-highlight__label">Glasgow-based & proud</div>
+              </div>
+              <div class="about-highlight">
+                <div class="about-highlight__value">💚</div>
+                <div class="about-highlight__label">Genuine passion</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Content -->
+          <div class="about-content">
+            <p class="eyebrow">About Us</p>
+            <h2 class="section-title" id="about-title">
+              Hi, I'm AJ — and I've been a dog person my whole life.
+            </h2>
+
+            <p class="section-subtitle" style="margin-bottom: 1.25rem;">
+              Growing up, I shared my home with three wonderful dogs of completely different breeds and sizes. That experience taught me how differently each dog communicates, plays, and needs comfort.
+            </p>
+
+            <p>
+              That lifelong bond is what inspired Pacino's Playcare. Along with my business partner, we've built a service rooted in genuine care — not corporate routine. We know the difference between a nervous Greyhound and an energetic Border Collie, and we'll always adapt to your dog's personality, not the other way around.
+            </p>
+
+            <p>
+              We keep our operation intentionally small — one family at a time — because we believe quality of care should never be diluted for the sake of profit. Your dog deserves the very best, and that's exactly what we're here to provide.
+            </p>
+
+            <!-- Breed experience tags -->
+            <div class="about-breeds" aria-label="Breeds AJ has experience with">
+              <span class="about-breed-tag">🐕 Mixed Breeds</span>
+              <span class="about-breed-tag">🦮 Large Breeds</span>
+              <span class="about-breed-tag">🐩 Small Breeds</span>
+              <span class="about-breed-tag">😰 Anxious Dogs</span>
+              <span class="about-breed-tag">🎾 High-Energy Dogs</span>
+              <span class="about-breed-tag">🧓 Senior Dogs</span>
+            </div>
+
+            <a href="contact.html" class="btn btn-gold">Meet Us & Book</a>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================
+         SERVICES OVERVIEW
+    ====================================================== -->
+    <section class="section section--alt" id="services" aria-labelledby="services-title">
+      <div class="container text-center">
+        <p class="eyebrow">What We Offer</p>
+        <h2 class="section-title" id="services-title">Simple, Honest Services</h2>
+        <p class="section-subtitle" style="margin-inline: auto; margin-bottom: 0;">
+          No hidden fees, no confusing packages. Just clear pricing for the care your dog needs.
+        </p>
+
+        <div class="services-grid">
+          <div class="service-card">
+            <span class="service-card__icon" aria-hidden="true">☀️</span>
+            <h3 class="service-card__title">Half-Day</h3>
+            <span class="service-card__price"><sup>£</sup>20</span>
+            <p class="service-card__body">
+              A morning or afternoon session — perfect for when you're out for a few hours. Includes feeding, play, and a walk.
+            </p>
+          </div>
+
+          <div class="service-card" style="border-color: var(--color-primary);">
+            <span class="service-card__icon" aria-hidden="true">🌙</span>
+            <h3 class="service-card__title">Overnight Stay</h3>
+            <span class="service-card__price"><sup>£</sup>35</span>
+            <p class="service-card__body">
+              A full overnight stay in a real home. Evening walk, bed-time routine, morning feed, and a morning walk included.
+            </p>
+          </div>
+
+          <div class="service-card">
+            <span class="service-card__icon" aria-hidden="true">📅</span>
+            <h3 class="service-card__title">Extended Stays</h3>
+            <span class="service-card__price">Discounted</span>
+            <p class="service-card__body">
+              Combining half-days, full days, and overnights unlocks our sliding-scale discount. Longer stays, better value.
+            </p>
+          </div>
+
+          <div class="service-card">
+            <span class="service-card__icon" aria-hidden="true">🛒</span>
+            <h3 class="service-card__title">Food Pre-Pay</h3>
+            <span class="service-card__price">0% Markup</span>
+            <p class="service-card__body">
+              We'll purchase your dog's specific food at retail price — saving you the errand. We charge exactly what we paid.
+            </p>
+          </div>
+        </div>
+
+        <div style="margin-top: 3rem; display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+          <a href="pricing.html" class="btn btn-outline">See Full Pricing</a>
+          <a href="contact.html" class="btn btn-primary">Get a Custom Quote</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================
+         TESTIMONIALS
+    ====================================================== -->
+    <section class="section" id="testimonials" aria-labelledby="testimonials-title">
+      <div class="container text-center">
+        <p class="eyebrow">What Dog Owners Say</p>
+        <h2 class="section-title" id="testimonials-title">Happy Pups, Happy Owners</h2>
+        <p class="section-subtitle" style="margin-inline: auto; margin-bottom: 0;">
+          Don't just take our word for it — hear from the Glasgow dog owners who've trusted us with their precious pups.
+        </p>
+
+        <div class="testimonials-grid">
+          <article class="testimonial-card">
+            <span class="testimonial-card__quote-mark" aria-hidden="true">"</span>
+            <blockquote>
+              <p class="testimonial-card__text">
+                Knowing Bella was the only dog there completely put my mind at ease. She's usually anxious around other dogs, but AJ sent us updates and she was absolutely settled. We'll never use a kennel again.
+              </p>
+            </blockquote>
+            <div class="testimonial-card__author">
+              <div class="testimonial-card__avatar" aria-hidden="true">👩</div>
+              <div>
+                <div class="testimonial-card__name">Sarah M.</div>
+                <div class="testimonial-card__dog">🐕 Bella, 4-year-old Greyhound</div>
+                <div class="testimonial-card__stars" aria-label="5 stars">★★★★★</div>
+              </div>
+            </div>
+          </article>
+
+          <article class="testimonial-card">
+            <span class="testimonial-card__quote-mark" aria-hidden="true">"</span>
+            <blockquote>
+              <p class="testimonial-card__text">
+                The pricing is incredibly fair, especially for an overnight stay. AJ clearly has a natural connection with dogs — Hamish absolutely loves going there now. The food pre-pay service saved me so much hassle.
+              </p>
+            </blockquote>
+            <div class="testimonial-card__author">
+              <div class="testimonial-card__avatar" aria-hidden="true">👨</div>
+              <div>
+                <div class="testimonial-card__name">Callum T.</div>
+                <div class="testimonial-card__dog">🐩 Hamish, 2-year-old Cockapoo</div>
+                <div class="testimonial-card__stars" aria-label="5 stars">★★★★★</div>
+              </div>
+            </div>
+          </article>
+
+          <article class="testimonial-card">
+            <span class="testimonial-card__quote-mark" aria-hidden="true">"</span>
+            <blockquote>
+              <p class="testimonial-card__text">
+                We were sceptical about leaving Rex for a full week, but the sliding discount made a long stay genuinely affordable. He came home relaxed and happy — not stressed like he used to be after kennels.
+              </p>
+            </blockquote>
+            <div class="testimonial-card__author">
+              <div class="testimonial-card__avatar" aria-hidden="true">👩</div>
+              <div>
+                <div class="testimonial-card__name">Fiona &amp; Dave R.</div>
+                <div class="testimonial-card__dog">🦮 Rex, 6-year-old Labrador</div>
+                <div class="testimonial-card__stars" aria-label="5 stars">★★★★★</div>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================
+         CTA BANNER
+    ====================================================== -->
+    <section class="section" aria-labelledby="cta-title">
+      <div class="container">
+        <div class="cta-banner">
+          <div class="cta-banner__text">
+            <h2 class="section-title" id="cta-title">Ready to Book?</h2>
+            <p>Tell us about your dog and your dates — we'll calculate a personalised quote with our tiered discount applied automatically.</p>
+          </div>
+          <div class="cta-banner__actions">
+            <a href="contact.html" class="btn btn-white btn-lg">Get My Quote</a>
+            <a href="pricing.html" class="btn btn-outline-white">View Pricing</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ========================================================
+       FOOTER
+  ======================================================== -->
+  <footer class="site-footer" aria-label="Site footer">
+    <div class="container">
+      <div class="footer-grid">
+
+        <!-- Brand -->
+        <div class="footer-brand">
+          <div class="footer-brand__logo">
+            <span class="footer-brand__logo-icon" aria-hidden="true">🐾</span>
+            <span class="footer-brand__logo-text">Pacino's Playcare</span>
+          </div>
+          <p class="footer-brand__tagline">
+            Glasgow's most personal dog-sitting service. One family at a time. Transparent pricing. Genuine care — always.
+          </p>
+          <span class="footer-brand__badge">
+            <span aria-hidden="true">📍</span> Glasgow Exclusive
+          </span>
+        </div>
+
+        <!-- Quick Links -->
+        <div>
+          <h3 class="footer-col__heading">Quick Links</h3>
+          <ul class="footer-col__list" role="list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="pricing.html">Pricing & Services</a></li>
+            <li><a href="food.html">Food Pre-Pay</a></li>
+            <li><a href="contact.html">Get a Quote</a></li>
+            <li><a href="index.html#about">About AJ</a></li>
+            <li><a href="index.html#peace-of-mind">Our Policy</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact -->
+        <div>
+          <h3 class="footer-col__heading">Get in Touch</h3>
+          <div class="footer-contact-item">
+            <span class="footer-contact-item__icon" aria-hidden="true">📧</span>
+            <span>hello@pacinosplaycare.co.uk</span>
+          </div>
+          <div class="footer-contact-item">
+            <span class="footer-contact-item__icon" aria-hidden="true">📍</span>
+            <span>Glasgow, Scotland<br>Service area: Glasgow only</span>
+          </div>
+          <div class="footer-contact-item">
+            <span class="footer-contact-item__icon" aria-hidden="true">🕐</span>
+            <span>Enquiries answered within 24 hours</span>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <p class="footer-bottom__copy">
+          &copy; <span id="footer-year"></span> Pacino's Playcare. All rights reserved.
+        </p>
+        <nav class="footer-bottom__links" aria-label="Footer legal links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+        </nav>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/main.js"></script>
+  <script>
+    document.getElementById('footer-year').textContent = new Date().getFullYear();
+  </script>
+
+</body>
+</html>
